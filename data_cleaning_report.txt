@@ -1,0 +1,51 @@
+TITANIC DATA CLEANING REPORT
+========================================
+
+Original dataset shape: 891 rows, 12 columns
+Final dataset shape: (891, 12)
+Duplicate rows found: 0
+Duplicate rows remaining: 0
+
+MISSING VALUES BEFORE CLEANING:
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+
+CLEANING OPERATIONS:
+- Removed extra spaces from column names.
+- Removed 0 duplicate rows.
+- Removed extra spaces from text columns.
+- Standardized Sex and Embarked text values.
+- Checked and converted numeric columns.
+- Filled 177 missing Age values with median age 28.0.
+- Fare had no missing values.
+- Filled 2 missing Embarked values with the most common port S.
+- Marked 687 missing Cabin values as Unknown.
+
+MISSING VALUES AFTER CLEANING:
+PassengerId    0
+Survived       0
+Pclass         0
+Name           0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           0
+Cabin          0
+Embarked       0
+
+Total missing values remaining: 0
+
+CONCLUSION:
+The dataset was inspected, cleaned, and saved for further analysis.
